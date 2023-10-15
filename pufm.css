@@ -1,0 +1,188 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.425), rgba(255, 255, 255, 0.2)), url('images/wood bg.jpg');
+        background-size: cover;
+        background-position: center;
+
+    }
+    
+    .page-header {
+        background-image: url("images/planter chairs.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 100px;
+        border: 1px solid rgb(245, 177, 177);
+    }
+    
+    .header {
+        flex: auto;
+        text-align: center;
+        margin-top: 10px;
+        font-family: 'Lilita One', Arial, Helvetica, sans-serif;
+        font-size: 600%;
+        font-weight: 200;
+        color: #FC7506; 
+    }
+    
+    .tag-line {
+        flex: auto;
+        margin-right: 58%;
+        font-family: 'Caveat', Arial, Helvetica, sans-serif;
+        font-size: 300%;
+        color: #5050f7; 
+        margin-top: 10px;
+    }
+    
+    .page-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px;
+        font-size: 200%;
+    }
+    
+    .page-nav a {
+        text-decoration: none;
+        font-family: 'Exo', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #ff0101; 
+        transition: color 0.3s;
+        margin: 10px;
+        margin-top: 5%;
+    }
+
+    .page-nav a:hover {
+        color: rgb(106, 106, 211);
+    }
+    
+    h2 {
+        margin-top: 30px;
+        flex: auto;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: red; 
+    }
+    
+    p {
+        padding: 30px;
+        margin-left: 10px;
+        font-family: 'Kalam', Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+        font-size: 30px;
+    }
+
+    #para {
+        background-color: rgba(250, 235, 215, 0.808);
+        padding: 10px;
+        margin: 150px;
+        border-radius: 30px;
+    }
+    
+    .gallery-images {
+        flex: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 30px;
+        margin-left: 10px;
+    }
+    
+    .gallery-images img {
+        width: 300px;
+        height: 300px;
+    }
+
+    #images {
+        background-color: rgba(250, 235, 215, 0.445);
+        padding: 10px;
+        margin: 190px;
+        border-radius: 30px;
+    }
+
+    #load-more {
+        background-color: #FC7506; 
+        color: rgb(248, 193, 193); 
+        padding: 10px 20px;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        margin: 20px 0;
+        
+    }
+
+    #load-more:hover {
+        background-color: #5f5ff8;
+    }
+
+    #load-more:active {
+        background-color: rgb(7, 11, 245);
+    }
+
+    .contact-us {
+        padding: 30px;
+        margin-left: 10px;
+        margin-top: 5px;
+        font-family: 'Kalam', Arial, Helvetica, sans-serif;
+        font-size: 200;
+        text-align: center;
+        color: #010111;
+    }
+
+    .email {
+        text-align: center;
+        font-family: 'Kalam', Arial, Helvetica, sans-serif;
+    }
+
+    #footer{
+        background-color: rgba(250, 235, 215, 0.445);
+        padding: 30px;
+        margin: 190px;
+        border-radius: 30px;
+    }
+    
+    @media (max-width: 768px) {
+        .header {
+                font-size: 300%;
+        }
+        .tag-line {
+                font-size: 150%;
+        }
+        .page-nav {
+                font-size: 120%;
+        }
+        p {
+                font-size: 16px;
+        }
+        .page-header {
+                padding: 50px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .header {
+                font-size: 200%;
+        }
+        .tag-line {
+                font-size: 120%;
+                margin-right: 5%;
+        }
+        .page-nav {
+                font-size: 100%;
+        }
+        p {
+                font-size: 14px;
+                padding: 20px;
+        }
+        .page-header {
+                padding: 30px;
+        }
+    }
+
