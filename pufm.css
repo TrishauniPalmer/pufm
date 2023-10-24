@@ -96,6 +96,8 @@
     .gallery-images img {
         width: 300px;
         height: 300px;
+        border-radius: 20px;
+        justify-content: space-evenly;
     }
 
     #images {
@@ -148,41 +150,44 @@
         border-radius: 30px;
     }
     
-    @media (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
         .header {
-                font-size: 300%;
+                font-size: 3rem;
+                float: left;
         }
         .tag-line {
-                font-size: 150%;
-        }
-        .page-nav {
-                font-size: 120%;
-        }
-        p {
-                font-size: 16px;
-        }
-        .page-header {
-                padding: 50px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .header {
-                font-size: 200%;
-        }
-        .tag-line {
-                font-size: 120%;
+                font-size: 1.5rem;
                 margin-right: 5%;
         }
         .page-nav {
-                font-size: 100%;
+                font-size: 1.2rem;
+        }
+        p {
+                font-size: 1rem;
+                padding: 2rem;
+        }
+        .page-header {
+                padding: 1.5rem;
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .header {
+                font-size: 2rem;
+        }
+        .tag-line {
+                font-size: 1.3rem;
+                margin-right: 5%;
+        }
+        .page-nav {
+                font-size: 1rem;
         }
         p {
                 font-size: 14px;
-                padding: 20px;
+                padding: 1rem;
         }
         .page-header {
-                padding: 30px;
+                padding: 0.5rem;
         }
     }
 
