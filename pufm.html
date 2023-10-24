@@ -35,14 +35,74 @@
                 <h2 id="Gallery">Gallery</h2>
 
                 <div class="gallery-images">
-                        <img src="images\gallery\blue built-in cabinet.jpg">
-                        <img src="images\gallery\bar with ocotogan mirror.jpg">
-                        <img src="images\gallery\cane armchairs and inlay table.jpg">
-                        <img src="images\gallery\hanging bench.jpg">
-                        <img src="images\gallery\vanity and green mirrors.jpg">
-                        <img src="images\gallery\pineapple d-chairs and d-table.jpg">
+                        <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="images\gallery\blue built-in cabinet.jpg" style="width: 100%;">        
+                        </div>
+
+                        <div class="mySlides"> 
+                        <div class="numbertext">2 / 6</div>
+                        <img src="images\gallery\bar with ocotogan mirror.jpg" style="width: 100%;">
+                        </div>
+
+                        <div class="mySlides"> 
+                        <div class="numbertext">3 / 6</div>
+                        <img src="images\gallery\cane armchairs and inlay table.jpg" style="width: 100%;">
+                        </div>
+                        
+                        <div class="mySlides"> 
+                        <div class="numbertext">4 / 6</div>
+                        <img src="images\gallery\hanging bench.jpg" style="width: 100%;">
+                        </div>
+
+                        <div class="mySlides"> 
+                        <div class="numbertext">5 / 6</div>
+                        <img src="images\gallery\vanity and green mirrors.jpg"style="width: 100%;">
+                        </div>
+                        
+                        <div class="mySlides"> 
+                        <div class="numbertext">6 / 6</div>
+                        <img src="images\gallery\pineapple d-chairs and d-table.jpg" style="width: 100%;">
+                        </div>
+                        
+                        <!-- Next and preview symbols/buttons-->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        
+                        <!--Image caption-->
+                        <div class="caption-container">
+                                <p id="caption"></p>
+                        </div>
+
+                        <!--Thumbnail Images-->
+                        <div class="row">
+                                <div class="column">
+                                <img class="demo cursor" src="images\gallery\blue built-in cabinet.jpg" style="width: 100%;" onclick="currentStyle(1)" alt="Built-In Bookcase">
+                        </div>
+
+                        <div class="column">
+                                <img class="demo cursor" src="images\gallery\bar with ocotogan mirror.jpg" style="width: 100%;" onclick="currentStyle(2)" alt="Caned Wet Bar With Octagon Mirror">
+                                </div>
+
+                        <div class="column">
+                                <img class="demo cursor" src="images\gallery\cane armchairs and inlay table.jpg" style="width: 100%;" onclick="currentStyle(3)" alt="Caned Armchairs With Inlay Side Tables">
+                                </div>        
+
+                        <div class="column">
+                                <img class="demo cursor" src="images\gallery\hanging bench.jpg" style="width: 100%;" onclick="currentStyle(4)" alt="Caned Hanging Bench">
+                                </div>
+
+                        <div class="column">
+                                <img class="demo cursor" src="images\gallery\vanity and green mirrors.jpg" style="width: 100%;" onclick="currentStyle(5)" alt="Caned Vanity/Dressing Table With Green Bamboo Style Mirrors">
+                                </div>
+                                
+                        <div class="column">
+                                <img class="demo cursor" src="images\gallery\pineapple d-chairs and d-table.jpg" style="width: 100%;" onclick="currentStyle(6)" alt="Dining Table And Pineapple Design Chairs">
+                                </div>
+                        </div>
                 </div>
-                <button id="load-more">Load More</button>
+
+                <!--<button id="load-more">Load More</button>-->
 
         </section>
 
