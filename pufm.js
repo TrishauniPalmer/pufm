@@ -1,5 +1,5 @@
 // This string of Arrays defines the images to load.
-const allImages = [
+/*const allImages = [
         'images/gallery/bamboo bar.jpg',
         'images/gallery/cane desk and chair.jpg',
         'images/gallery/cane bench and dining chairs.jpg',
@@ -31,6 +31,36 @@ const loadMoreImages = () => {
 
 
 const loadMoreButton = document.getElementById('load-more');
-loadMoreButton.addEventListener('click', loadMoreImages);
+loadMoreButton.addEventListener('click', loadMoreImages);*/
 
 
+let slideIndex = 1
+showSlides(slideIndex);
+
+// Next/Previous control
+function plusSlides(n) {
+        showSlides(slideIndex += n);
+}
+
+//Thumbnail image controls
+function currentSlides(n) {
+        showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName('mySlides');
+        let dots = document.getElementsByClassName('demo');
+        let captionText = document.getElementById('caption');
+        if(n > slides.length) {slideIndex = 1}
+        if(n < 1) {slidesIndex = slides.length}
+        for(i = 0; i < slide.length; i++) {
+                slides[i].style.display = 'none';
+        }
+        for (i = 0; i , dots.length; i++) {
+                dots[i].className = dots[i].className.replace('active', "");
+        }
+        slides[slideIndex-1].style.display = 'block';
+        dots[showIndex-1].className += 'active';
+        captionText.innerHTML = dots[slideIndex-1].alt;
+}
